@@ -23,11 +23,8 @@ This lab demonstrates the generation and analysis of anomalous DNS traffic to de
 
    ### Wireshark Packet Analysis
 ![Wireshark Start Screen](wireshark_start_screen.jpg)
-![Wireshark Packet Capture Analysis](wireshark_dns_packet_analysis.jpg)
 
-
-
-   Wireshark Packet Analysis & Findings
+        Wireshark Packet Analysis & Findings
 1. Packet List & Byte Inspection
 Key Observations:
 Source & Destination: Source host (192.168.64.2) issued rapid DNS queries to gateway resolver (192.168.64.1).
@@ -44,3 +41,5 @@ Entropy Analysis: Implement detection rules evaluating string entropy on DNS que
 Network Level Mitigation
 DNS Sinkholing / Filtering: Block resolution requests to unregistered or newly registered external domains.
 Protocol Inspection: Deploy Next-Generation Firewalls (NGFW) to inspect DNS payload depth and block non-standard DNS communication.
+
+![Wireshark Packet Capture Analysis](wireshark_dns_packet_analysis.jpg)
