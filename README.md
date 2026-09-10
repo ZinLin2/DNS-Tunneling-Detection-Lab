@@ -21,6 +21,10 @@ This lab demonstrates the generation and analysis of anomalous DNS traffic to de
    ```bash
    for i in {1..15}; do nslookup $(openssl rand -hex 16).example.com; done
 
+   ### Wireshark Packet Analysis
+![Wireshark Start Screen](wireshark_start_screen.jpg)
+![Wireshark Packet Capture Analysis](wireshark_dns_packet_analysis.jpg)
+
 
 
    Wireshark Packet Analysis & Findings
